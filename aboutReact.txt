@@ -1,1 +1,5 @@
-React is a free and open-source front-end JavaScript library for building user interfaces based on components.
+React is an open-source JavaScript library designed for constructing user interfaces through the creation and management of components.
+
+
+
+
