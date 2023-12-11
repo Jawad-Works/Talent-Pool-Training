@@ -1,4 +1,4 @@
-React is an open-source JavaScript library designed for constructing user interfaces through the creation and management of components.
+React is a JavaScript library designed for constructing user interfaces through the creation and management of components.
 
 
 
