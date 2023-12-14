@@ -3,23 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jawad's Portfolio</title>
+    <title>Edit Portfolio - Jawad's Portfolio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles.css" />
+    <script src="edit-portfolio.js" defer></script>
   </head>
 
   <body>
     <header>
-      <div>
-        <p>Jawad's Portfolio</p>
-      </div>
-      <div class="headerLinks">
-        <p><a href="edit-portfolio.html">Edit</a></p>
-        <p>Login</p>
-      </div>
+      <p><a href="portfolio.html">Jawad's Portfolio</a></p>
     </header>
     <main>
       <div class="content">
@@ -36,7 +31,54 @@
           </p>
         </div>
         <div class="experiences">
-          <p>Experiences</p>
+          <div class="experienceHeader">
+            <p>Experiences</p>
+            <button id="addExperience">Add</button>
+          </div>
+          <div class="addExperienceForm">
+            <div id="experienceForm" style="display: none">
+              <div>
+                <input
+                  type="text"
+                  id="companyName"
+                  name="companyName"
+                  required
+                  placeholder="Company Name"
+                />
+
+                <input
+                  type="text"
+                  id="startDate"
+                  name="startDate"
+                  required
+                  class="experienceDates"
+                  placeholder="Start Date"
+                />
+
+                <input
+                  type="text"
+                  id="endDate"
+                  name="endDate"
+                  required
+                  class="experienceDates"
+                  placeholder="End Date"
+                />
+              </div>
+              <div class="experienceSaveCard">
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="6"
+                  placeholder="Description"
+                  required
+                ></textarea>
+
+                <button id="saveExperience">Save</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="experiencesList"></div>
         </div>
       </div>
       <aside>

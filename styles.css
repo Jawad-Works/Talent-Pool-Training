@@ -19,6 +19,20 @@ header p {
   cursor: pointer;
 }
 
+/*
+already added
+*/
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main {
   height: 420px;
   margin-top: 10px;
@@ -55,11 +69,102 @@ main {
   border: 1px solid rgb(172, 167, 167);
   border-radius: 5px;
   height: 257px;
+  overflow: auto;
 }
 
 .experiences p {
   font-size: large;
   margin-left: 10px;
+}
+
+.experienceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#addExperience {
+  background-color: white;
+  border: none;
+  border: 1px solid #dfd7d7;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Pacifico", cursive;
+}
+
+#addExperience:hover {
+  background-color: #fc0fc0;
+  color: black;
+}
+
+#saveExperience {
+  background-color: white;
+  border: none;
+  border: 1px solid #dfd7d7;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Pacifico", cursive;
+  margin-top: 72px;
+}
+
+#saveExperience:hover {
+  background-color: #fc0fc0;
+  color: black;
+}
+
+.experienceSaveCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#experienceForm {
+  border: 1px solid #dfd7d7;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.experience-item {
+  border: 1px solid #dfd7d7;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+}
+
+
+#companyName {
+  width: 300px;
+}
+
+#description {
+  margin-top: 10px;
+  width: 700px;
+}
+
+.experienceDates {
+  width: 150px;
 }
 
 aside {
