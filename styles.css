@@ -19,6 +19,14 @@ header p {
   cursor: pointer;
 }
 
+header a {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: large;
+}
+
 main {
   height: 420px;
   margin-top: 10px;
@@ -97,4 +105,83 @@ footer img {
   justify-content: center;
   align-items: center;
   height: 35px;
+}
+
+.signupContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  flex-direction: column;
+}
+
+#signupForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputField {
+  padding-left: 20px;
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #dfd7d7;
+  text-align: start;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.inputField::placeholder {
+  color: #b3afaf;
+}
+
+.submitButton {
+  background-color: white;
+  border: none;
+  border: 1px solid #dfd7d7;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-family: "Pacifico", cursive;
+}
+
+.submitButton:hover {
+  background-color: #fc0fc0;
+  color: black;
+}
+
+.signupCard {
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  border: 1px solid #dfd7d7;
+  border-radius: 12px;
+}
+
+.signupCard p {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+#signupForm p {
+  font-size: larger;
+}
+#successMessage {
+  font-size: medium;
+  margin-top: 10px;
+}
+
+.error-message {
+  font-size: small;
+  margin-top: 5px;
+  color: red;
 }

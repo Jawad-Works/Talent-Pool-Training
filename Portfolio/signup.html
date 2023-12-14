@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - Jawad's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="signup-validation.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <p><a href="portfolio.html">Jawad's Portfolio</a></p>
+    </header>
+    <main>
+      <div class="signupContent">
+        <div class="signupCard">
+            <form id="signupForm">
+                <p>Signup</p>
+              <div>
+                <input class="inputField" type="text" id="name" name="name" placeholder="Name">
+                <div id="nameError" class="error-message"></div>
+              </div>
+        
+              <div>
+                <input class="inputField" id="email" name="email" placeholder="Email">
+                <div id="emailError" class="error-message"></div>
+              </div>
+        
+              <div>
+                <input class="inputField" type="password" id="password" name="password" placeholder="Password">
+                <div id="passwordError" class="error-message"></div>
+              </div>
+        
+              <button class="submitButton" type="submit">Submit</button>
+            </form>
+            <p id="successMessage" style="color: green;"></p>
+        </div>
+          </div>
+      </div>
+    </main>
+  </body>
+</html>
+
