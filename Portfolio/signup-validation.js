@@ -1,5 +1,5 @@
 document.getElementById("signupForm").addEventListener("submit", function (event) {
-    console.log("Form submit event triggered");
+  
     event.preventDefault(); // Prevents the default form submission
 
     // Reset errors and borders
@@ -34,24 +34,24 @@ document.getElementById("signupForm").addEventListener("submit", function (event
     if (email.trim() === "") {
       document.getElementById("emailError").textContent = "Email is required";
       emailInput.style.borderColor = "red";
-      return false; // Prevents form submission
+      return false; 
 
     } else if (!emailRegex.test(email)) {
       document.getElementById("emailError").textContent = "Invalid email address";
       emailInput.style.borderColor = "red";
-      return false; // Prevents form submission
+      return false; 
     }
 
     // Validate password
     if (password.trim() === "") {
       document.getElementById("passwordError").textContent = "Password is required";
       passwordInput.style.borderColor = "red";
-      return false; // Prevents form submission
+      return false;
 
     } else if (password.trim().length < 8) {
       document.getElementById("passwordError").textContent = "Password must be at least 8 characters";
       passwordInput.style.borderColor = "red";
-      return false; // Prevents form submission
+      return false; 
     }
 
     // If all validations pass, you can perform further actions
