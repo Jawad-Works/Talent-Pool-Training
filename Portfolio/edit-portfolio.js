@@ -11,18 +11,24 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   saveExperienceButton.addEventListener("click", function () {
-
-    const companyName = document.getElementById("companyName").value;
-    const startDate = document.getElementById("startDate").value;
-    const endDate = document.getElementById("endDate").value;
-    const description = document.getElementById("description").value;
-
+    const companyName = document.getElementById("companyName").value.trim();
+    const startDate = document.getElementById("startDate").value.trim();
+    const endDate = document.getElementById("endDate").value.trim();
+    const description = document.getElementById("description").value.trim();
+  
+    // Check if any of the required fields is empty
+    if (!companyName || !startDate || !endDate || !description) {
+      alert("Please fill in all required fields.");
+      return; 
+    }
+  
     experiences.push({ companyName, startDate, endDate, description });
-
+  
     displayExperiences();
-
+  
     clearExperienceForm();
   });
+  
 
   function displayExperiences() {
     experiencesList.innerHTML = "";

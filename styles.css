@@ -19,9 +19,10 @@ header p {
   cursor: pointer;
 }
 
-/*
-already added
+/* 
+already added 
 */
+
 header a {
   text-decoration: none;
   color: black;
@@ -150,9 +151,7 @@ main {
   padding-bottom: 5px;
   border-radius: 5px;
   margin-bottom: 10px;
-
 }
-
 
 #companyName {
   width: 300px;
